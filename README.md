@@ -1,9 +1,9 @@
 # GettingCleaningFinal
 Final project for Getting/Cleaning Data
 
-The major files of this repository are run_analysis.R and codebook.pdf.
+The major files of this repository are run_analysis.R and codebook.txt.
 
-codebook.pdf 
+codebook.txt includes abridged sections from the documentation of the original data package, as well as information on additional semantics used by cset1.
 
 run_analysis.R defines a function run_analysis() which consolidates the most important information from the text files provided in the original data package into a single data frame. The script first loads the relevant files from the original package. Then these files are bound into aggregated data frames until the resulting frame, cset1, possesses all the columns it requires. Then, using reference files such as activity_labels.txt and features.txt, the names and values of certain columns are modified to be more descriptive. Finally, the data frame is stripped of all feature columns which do not contain the key words "mean()" or "std()". cset1 is returned as output of the function.
 
